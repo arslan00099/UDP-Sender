@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin = "16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ipadress"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter IP Address"
+        android:text="192.168.0.109"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter Port"
+        android:text="4444"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="10dp"
+        android:text="Connect" />
+
+    <TableRow
+        android:id="@+id/tr_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp">
+
+        <TextView
+            android:id="@+id/edt_send_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter message"
+            android:inputType="text" />
+
+
+    </TableRow>
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:text="Switch1:"
+        android:checked="true"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="260dp"
+        android:text="Switch1:"
+        android:checked="true"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="310dp"
+        android:text="Switch1:"
+        android:checked="true"
+        android:textOff="OFF"
+        android:textOn="ON"/>
+
+    <ImageView
+        android:id="@+id/iv_mic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+android:layout_marginStart="120dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/ic_baseline_mic_24" />
+
+</RelativeLayout>
