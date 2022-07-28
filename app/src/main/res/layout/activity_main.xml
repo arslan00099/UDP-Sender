@@ -21,7 +21,7 @@
         android:id="@+id/port"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+android:layout_marginTop="40dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:hint="Enter Port"
@@ -63,43 +63,43 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:switchMinWidth="56dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginStart="110dp"
         android:layout_marginTop="200dp"
-        android:text="Switch1:"
         android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text="Start/Stop"
         android:textOff="OFF"
-        android:textOn="ON"/>
+        android:textOn="ON" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:switchMinWidth="56dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="260dp"
-        android:text="Switch2:"
         android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text="Forward/Backward:"
         android:textOff="OFF"
-        android:textOn="ON"/>
+        android:textOn="ON" />
 
     <Switch
         android:id="@+id/switch3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:switchMinWidth="56dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginStart="110dp"
         android:layout_marginTop="310dp"
-        android:text="Switch3:"
         android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text="UP/Down:"
         android:textOff="OFF"
-        android:textOn="ON"/>
+        android:textOn="ON" />
 
     <ImageView
         android:id="@+id/iv_mic"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="120dp"
+android:layout_marginStart="130dp"
         android:layout_marginTop="450dp"
         android:src="@drawable/ic_baseline_mic_24" />
 
