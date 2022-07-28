@@ -65,31 +65,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          sw1 = (Switch) findViewById(R.id.switch1);
         sw2 = (Switch) findViewById(R.id.switch2);
         sw3 = (Switch) findViewById(R.id.switch3);
+        sw1.setChecked(false);
+        sw2.setChecked(false);
+        sw3.setChecked(false);
         //sw.setChecked(false);
         sw1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    sendMessage("1on");
+                    sendMessage("start");
                 } else {
-                    sendMessage("1off");
+                    sendMessage("stop");
                 }
             }
         });
         sw2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    sendMessage("2on");
+                    sendMessage("forward");
                 } else {
-                    sendMessage("2off");
+                    sendMessage("backward");
                 }
             }
         });
         sw3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    sendMessage("3on");
+                    sendMessage("up");
                 } else {
-                    sendMessage("3off");
+                    sendMessage("down");
                 }
             }
         });
@@ -157,22 +160,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Objects.requireNonNull(result).get(0));
                 String msg= String.valueOf(mEditTextSendMessage.getText());
                 //Toast.makeText(this, "msg :"+msg, Toast.LENGTH_SHORT).show();
-                if(msg.contains("turn on switch 1") || msg.contains("turn on switch one") ){
+                if(msg.contains("start") || msg.contains("start") ){
                     sw1.setChecked(true);
                 }
-               else if(msg.contains("turn off switch 1") || msg.contains("turn off switch one") ){
+               else if(msg.contains("stop") || msg.contains("stop") ){
                     sw1.setChecked(false);
                 }
-               else if (msg.contains("turn on switch 2") || msg.contains("turn on switch to") ){
+               else if (msg.contains("forword") || msg.contains("forward") ){
                     sw2.setChecked(true);
                 }
-                else if(msg.contains("turn off switch 2") || msg.contains("turn off switch to") ){
+                else if(msg.contains("backward") || msg.contains("backward") ){
                     sw2.setChecked(false);
                 }
-                else if (msg.contains("turn on switch 3") || msg.contains("turn on switch three") ){
+                else if (msg.contains("up") || msg.contains("aap") ){
                     sw3.setChecked(true);
                 }
-                else if(msg.contains("turn off switch 3") || msg.contains("turn off switch three") ){
+                else if(msg.contains("down") || msg.contains("down") ){
                     sw3.setChecked(false);
                 }
 
